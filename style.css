@@ -1,0 +1,191 @@
+/* === RESET E CONFIGURAÇÕES BÁSICAS === */
+* {
+  margin: 0; /* Remove margens padrão dos navegadores */
+  padding: 0; /* Remove espaçamentos padrão */
+  box-sizing: border-box; /* Faz com que padding e border não aumentem o tamanho do elemento */
+}
+
+a {
+  text-decoration: none; /* Remove sublinhado dos links */
+  color: #1f1f1f; /* Cor padrão dos links */
+  display: block; /* Faz o link ocupar o espaço total disponível */
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif; /* Define uma fonte padrão legível */
+  line-height: 1.6; /* Espaçamento entre linhas */
+  color: #333; /* Cor padrão do texto */
+  background-color: #ccc; /* Cor de fundo da página */
+
+  height: 20px;
+}
+
+.container {
+  max-width: 1300px; /* Limita a largura máxima do conteúdo */
+  margin: 0 auto; /* Centraliza horizontalmente */
+  padding: 20px; /* Espaçamento interno */
+  text-align: center; /* Centraliza o texto por padrão */
+ 
+  
+}
+
+/* === CABEÇALHO === */
+header {
+  background-color: #1f1f1f; /* Fundo escuro */
+  padding: 05px 0; /* Espaçamento vertical */
+  color: white; /* Cor do texto */
+  height: 15vh;
+}
+
+.logo {
+  font-size: 1.8rem; /* Tamanho da fonte da logo */
+}
+
+nav ul.menu {
+  list-style: none; /* Remove os marcadores da lista */
+  display: flex; /* Coloca os itens em linha */
+  gap: 20px; /* Espaçamento entre os itens */
+  justify-content: L; /* Centraliza os itens no menu */
+  padding-top: 0,2px;
+}
+
+nav a {
+  color: white; /* Cor dos links no menu */
+  transition: color 0.3s; /* Transição suave quando passar o mouse */
+}
+
+nav a:hover {
+  color: #ccc; /* Cor ao passar o mouse nos links */
+}
+
+/* === BANNER PRINCIPAL === */
+.banner {
+  background: url('') no-repeat center center/cover; 
+  /* Define imagem de fundo centralizada e cobrindo toda a área */
+  color: red; /* Cor do texto sobre o banner */
+  padding: 100px 20px; /* Espaçamento interno vertical e horizontal */
+  text-align:left; /* Centraliza o conteúdo do banner */
+}
+
+.banner h2 {
+  font-size: 2.5rem; /* Tamanho grande para o título */
+  margin-bottom: 10px;
+}
+
+.banner p {
+  font-size: 1.2rem; /* Tamanho médio para o subtítulo */
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #1f1f1f; /* Fundo do botão */
+  color: white; /* Cor do texto */
+  padding: 10px 20px; /* Espaçamento interno do botão */
+  text-decoration: none; /* Remove sublinhado */
+  border-radius: 5px; /* Cantos arredondados */
+  transition: background-color 0.3s; /* Efeito ao passar o mouse */
+  display: block;
+  max-width: 200px;
+  text-align: center;
+  margin: 20px auto; /* Centraliza o botão horizontalmente */
+}
+
+.btn:hover {
+  background-color: #333; /* Cor mais clara ao passar o mouse */
+}
+
+/* === PRODUTOS EM DESTAQUE === */
+.destaques {
+  padding: 60px 20px; /* Espaçamento interno grande */
+  background-color: #fff; /* Fundo branco para contraste */
+}
+
+.destaques h3 {
+  text-align: center; /* Centraliza o título */
+  margin-bottom: 40px;
+  font-size: 2rem; /* Tamanho grande */
+}
+
+.produtos-grid {
+  display: grid; /* Cria um layout de grid */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+  /* Cria colunas responsivas que se ajustam */
+  gap: 30px; /* Espaçamento entre os cards */
+}
+
+.produto {
+  background-color: #f1f1f1; /* Cor de fundo dos cards */
+  padding: 20px;
+  border-radius: 8px; /* Bordas arredondadas */
+  text-align: center;
+  transition: transform 0.5s; /* Animação suave */
+  
+}
+
+.produto:hover {
+  transform: scale(1.03); /* Aumenta um pouco ao passar o mouse */
+}
+
+.produto img {
+  max-width: 100%; /* Imagem se adapta ao card */
+  border-radius: 5px; /* Bordas arredondadas na imagem */
+  margin-bottom: 10px;
+}
+
+.produto h4 {
+  margin: 10px 0;
+}
+
+/* === RODAPÉ === */
+footer {
+  background-color: #1f1f1f; /* Fundo escuro */
+  color: white; /* Texto branco */
+  text-align: center; /* Centraliza conteúdo */
+  padding: 20px 0;
+  margin-top: 60px; /* Espaço acima do rodapé */
+}
+main { 
+background: url(../img/Logo\ SintaX\ com\ Estilo\ Urbano_page-0001.jpg)no-repeat center center;
+background-size: cover;
+height: 113vh;
+
+}
+.menu-resp div{ 
+  width: 32px; 
+  height: 2px;
+  background:#fff;
+  margin: 8px;
+}
+
+.menu-resp {
+  cursor: pointer;
+display: none;
+}
+
+@media (max-width: 999px){
+ .nav.list{
+    position: absolute;
+    top: 8vh;
+    left: 0;
+    width: 50vh;
+    height: 92vh;
+    background: #1f1f1f;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100px);
+    }
+}
+
+
+.nav,.list li {
+margin-left: 0;
+opacity: 0;
+
+}
+
+
+
+
+  
+
