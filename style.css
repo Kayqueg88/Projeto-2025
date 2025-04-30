@@ -9,6 +9,15 @@ a {
   text-decoration: none; /* Remove sublinhado dos links */
   color: #1f1f1f; /* Cor padrão dos links */
   display: block; /* Faz o link ocupar o espaço total disponível */
+  text-align: center;
+  justify-content: left;
+  padding-top: 2px;
+}
+.menu{
+  margin: 0; /* Remove margens padrão dos navegadores */
+  padding: 0; /* Remove espaçamentos padrão */
+  box-sizing: border-box
+
 }
 
 body {
@@ -42,28 +51,30 @@ header {
 }
 
 nav ul.menu {
-  list-style: none; /* Remove os marcadores da lista */
-  display: flex; /* Coloca os itens em linha */
+  list-style: none; /* Remove marcadores da lista */
+  display: flex; /* Deixa os itens lado a lado */
   gap: 20px; /* Espaçamento entre os itens */
-  justify-content: L; /* Centraliza os itens no menu */
-  padding-top: 0,2px;
+  
 }
 
 nav a {
   color: white; /* Cor dos links no menu */
   transition: color 0.3s; /* Transição suave quando passar o mouse */
+  text-align: left;
+  display: flex;
 }
 
 nav a:hover {
   color: #ccc; /* Cor ao passar o mouse nos links */
+
 }
 
 /* === BANNER PRINCIPAL === */
 .banner {
   background: url('') no-repeat center center/cover; 
   /* Define imagem de fundo centralizada e cobrindo toda a área */
-  color: red; /* Cor do texto sobre o banner */
-  padding: 100px 20px; /* Espaçamento interno vertical e horizontal */
+  color:brown ; /* Cor do texto sobre o banner */
+  padding: 100px 18px; /* Espaçamento interno vertical e horizontal */
   text-align:left; /* Centraliza o conteúdo do banner */
 }
 
@@ -122,6 +133,12 @@ nav a:hover {
   
 }
 
+
+.menu.in{
+display: flex;
+
+
+}
 .produto:hover {
   transform: scale(1.03); /* Aumenta um pouco ao passar o mouse */
 }
@@ -136,56 +153,21 @@ nav a:hover {
   margin: 10px 0;
 }
 
+
+main{
+  
+    background: url(..//Logo%20SintaX%20com%20Estilo%20Urbano_page-0001.jpg)no-repeat center center;
+    background-size: cover;
+    height: 113vh;
+    
+}
+
+
 /* === RODAPÉ === */
 footer {
   background-color: #1f1f1f; /* Fundo escuro */
   color: white; /* Texto branco */
-  text-align: center; /* Centraliza conteúdo */
+  text-align: right; /* Centraliza conteúdo */
   padding: 20px 0;
   margin-top: 60px; /* Espaço acima do rodapé */
 }
-main { 
-background: url(../img/Logo\ SintaX\ com\ Estilo\ Urbano_page-0001.jpg)no-repeat center center;
-background-size: cover;
-height: 113vh;
-
-}
-.menu-resp div{ 
-  width: 32px; 
-  height: 2px;
-  background:#fff;
-  margin: 8px;
-}
-
-.menu-resp {
-  cursor: pointer;
-display: none;
-}
-
-@media (max-width: 999px){
- .nav.list{
-    position: absolute;
-    top: 8vh;
-    left: 0;
-    width: 50vh;
-    height: 92vh;
-    background: #1f1f1f;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    transform: translateX(100px);
-    }
-}
-
-
-.nav,.list li {
-margin-left: 0;
-opacity: 0;
-
-}
-
-
-
-
-  
-
